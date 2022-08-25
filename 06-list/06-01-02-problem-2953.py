@@ -1,4 +1,6 @@
 """
+#arraylist
+#yes
 https://www.acmicpc.net/problem/2953
 """
 
