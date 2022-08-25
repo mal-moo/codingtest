@@ -1,7 +1,7 @@
 """
-#linkedlist
-#no
-https://www.acmicpc.net/problem/1158
+    data structure: #linkedlist
+    understand: n
+    link: https://www.acmicpc.net/problem/1158
 """
 
 class Node:

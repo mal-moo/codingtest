@@ -1,7 +1,7 @@
 """
-#arraylist
-#yes
-https://www.acmicpc.net/problem/2953
+    data structure: #arraylist
+    understand: y
+    link: https://www.acmicpc.net/problem/2953
 """
 
 human = [list(map(int, input().split())) for _ in range(5)]
