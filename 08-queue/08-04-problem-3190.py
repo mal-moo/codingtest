@@ -3,7 +3,6 @@
     understand: y
     link: https://www.acmicpc.net/problem/3190
     memo: direction_change() 수식 기억하기
-
 """
 from collections import deque
 

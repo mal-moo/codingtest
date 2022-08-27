@@ -1,7 +1,7 @@
 """
-#arraylist
-#yes
-https://www.acmicpc.net/problem/10818
+    data structure: #arraylist
+    understand: y
+    link: https://www.acmicpc.net/problem/10818
 """
 
 n = int(input())
