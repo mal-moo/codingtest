@@ -1,6 +1,6 @@
 """
     data structure: #tree
-    understand: n
+    understand: y
     link: https://www.acmicpc.net/problem/1991
 """
 
@@ -12,9 +12,8 @@ class Node:
     
 
 def pre_order(node):
-    print(node.data, end='')
-    
     if node.left_node != '.':
+        print('\t')
         pre_order(tree[node.left_node])
     if node.right_node != '.':
         pre_order(tree[node.right_node])
