@@ -6,8 +6,7 @@
 
 import sys
 sys.setrecursionlimit(20000)  # ?
-
-input = sys.stdin.readline()
+inp = sys.stdin.readline()
 
 
 class Node:
@@ -40,26 +39,28 @@ class Tree:
                         break
                     current = current.right
     
-    def post_order(self, node=None):
-        #global answer
-        answer = []
+    def post_order(self, node=None, post_data=None):
+        if post_data is None:
+            post_data = []
+        
         if node is None:
             node = self.root
-        
         if node.left is not None:
-            self.post_order(node.left)
+            self.post_order(node.left, post_data)
         if node.right is not None:
-            self.post_order(node.right)
-        answer.append(node.data)
+            self.post_order(node.right, post_data)
+        
+        post_data.append(node.data)
 
-        return answer
+        return post_data
 
 tree = Tree() 
+
 while True:
     try:
         tree.add(int(input()))
     except:
         break 
 
-answer = tree.post_order()
-print('\n'.join(map(str, answer)))
+post_data = tree.post_order()
+print('\n'.join(map(str, post_data)))
