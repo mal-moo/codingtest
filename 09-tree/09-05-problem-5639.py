@@ -1,12 +1,12 @@
 """
     data structure: #tree
-    understand: n
+    understand: y
     link: https://www.acmicpc.net/problem/5639
 """
 
 import sys
-sys.setrecursionlimit(20000)  # ?
-inp = sys.stdin.readline()
+
+sys.setrecursionlimit(20000)
 
 
 class Node:
@@ -38,13 +38,14 @@ class Tree:
                         current.right = Node(data)
                         break
                     current = current.right
-    
+        
     def post_order(self, node=None, post_data=None):
         if post_data is None:
             post_data = []
         
         if node is None:
             node = self.root
+        
         if node.left is not None:
             self.post_order(node.left, post_data)
         if node.right is not None:
@@ -64,4 +65,5 @@ while True:
         break 
 
 post_data = tree.post_order()
+
 print('\n'.join(map(str, post_data)))
