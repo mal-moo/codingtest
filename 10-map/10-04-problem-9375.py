@@ -1,6 +1,6 @@
 """
     data structure: #map
-    understand: n
+    understand: y
     link: https://www.acmicpc.net/problem/9375
 """
 
@@ -10,6 +10,7 @@ for i in range(testcases):
     map = {}
     answer = 1
     n = int(input())
+    
     for j in range(n):
         a, b = input().split()
         if not b in map:
