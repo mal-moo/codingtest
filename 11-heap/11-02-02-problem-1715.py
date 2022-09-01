@@ -12,7 +12,6 @@ heapq.heapify(cards)
 answer = 0
 
 while len(cards) != 1:
-    print('cards: ', cards)
     first = heapq.heappop(cards)
     second = heapq.heappop(cards)
 
