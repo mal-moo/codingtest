@@ -22,7 +22,7 @@ for i in range(n):
     if prefix_sum[i] in map:
         answer += 1
         map.clear()
-        map[prefix_sum[i-1]] = 1
+        map[prefix_sum[i-1]] = 1  # 누적합부터 다시 수를 삽입해야 하는 연속의 배열의 합이 0일 때를 확인하기 위해 설정
     
     map[prefix_sum[i]] = 1
 
